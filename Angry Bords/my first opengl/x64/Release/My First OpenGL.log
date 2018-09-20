@@ -1,0 +1,118 @@
+﻿  Camera.cpp
+  client.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\client.cpp(70): warning C4101: '_usServerPort': unreferenced local variable
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\client.cpp(75): warning C4101: '_uiServerIndex': unreferenced local variable
+  consoletools.cpp
+  CubeMap.cpp
+  Entity.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\entity.cpp(11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\entity.cpp(12): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  GameManager.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  inputlinebuffer.cpp
+  main.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  MainMenu.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\mainmenu.cpp(66): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  network.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  networkmain.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  OtherPlayer.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Player.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Scene.cpp
+  server.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  ShaderLoader.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\shaderloader.cpp(36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\shaderloader.cpp(36): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+  socket.cpp
+  Sound.cpp
+  Sphere.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sphere.cpp(22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sphere.cpp(23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sphere.cpp(24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Sprite.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sprite.cpp(236): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sprite.cpp(237): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sprite.cpp(243): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sprite.cpp(244): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sprite.cpp(250): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sprite.cpp(251): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sprite.cpp(257): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\sprite.cpp(258): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Compiling...
+  TextLabel.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\textlabel.cpp(63): warning C4838: conversion from 'FT_Pos' to 'GLuint' requires a narrowing conversion
+  UFO.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry bords\my first opengl\modelmesh.h(79): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  UISprite.cpp
+  Utils.cpp
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+CubeMap.obj : error LNK2001: unresolved external symbol SOIL_free_image_data
+CubeMap.obj : error LNK2001: unresolved external symbol SOIL_load_image
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewGenerateMipmap
+main.obj : error LNK2001: unresolved external symbol __imp_glutKeyboardUpFunc
+main.obj : error LNK2001: unresolved external symbol __imp___glutCreateWindowWithExit
+main.obj : error LNK2001: unresolved external symbol __imp_glutSetOption
+main.obj : error LNK2001: unresolved external symbol __imp___glutInitWithExit
+main.obj : error LNK2001: unresolved external symbol __imp_glutPostRedisplay
+main.obj : error LNK2001: unresolved external symbol __imp_glutKeyboardFunc
+main.obj : error LNK2001: unresolved external symbol __imp_glutIdleFunc
+main.obj : error LNK2001: unresolved external symbol __imp_glutInitDisplayMode
+main.obj : error LNK2001: unresolved external symbol __imp_glutDisplayFunc
+main.obj : error LNK2001: unresolved external symbol __imp_glutMainLoop
+main.obj : error LNK2001: unresolved external symbol __imp_glutInitWindowPosition
+main.obj : error LNK2001: unresolved external symbol __imp_glutInitWindowSize
+main.obj : error LNK2001: unresolved external symbol __imp_glewInit
+main.obj : error LNK2001: unresolved external symbol __imp_glutSwapBuffers
+MainMenu.obj : error LNK2001: unresolved external symbol __imp_glutGet
+OtherPlayer.obj : error LNK2001: unresolved external symbol aiGetMaterialTextureCount
+OtherPlayer.obj : error LNK2001: unresolved external symbol "public: char const * __cdecl Assimp::Importer::GetErrorString(void)const " (?GetErrorString@Importer@Assimp@@QEBAPEBDXZ)
+OtherPlayer.obj : error LNK2001: unresolved external symbol "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(char const *,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@PEBDI@Z)
+OtherPlayer.obj : error LNK2001: unresolved external symbol "public: __cdecl Assimp::Importer::~Importer(void)" (??1Importer@Assimp@@QEAA@XZ)
+OtherPlayer.obj : error LNK2001: unresolved external symbol "public: __cdecl Assimp::Importer::Importer(void)" (??0Importer@Assimp@@QEAA@XZ)
+OtherPlayer.obj : error LNK2001: unresolved external symbol aiGetMaterialTexture
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderiv
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewCompileShader
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewCreateShader
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewCreateProgram
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderInfoLog
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewGetProgramiv
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewAttachShader
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewShaderSource
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewGetProgramInfoLog
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewLinkProgram
+Sound.obj : error LNK2001: unresolved external symbol FMOD_System_Create
+Sound.obj : error LNK2001: unresolved external symbol "public: enum FMOD_RESULT __cdecl FMOD::System::createSound(char const *,unsigned int,struct FMOD_CREATESOUNDEXINFO *,class FMOD::Sound * *)" (?createSound@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDIPEAUFMOD_CREATESOUNDEXINFO@@PEAPEAVSound@2@@Z)
+Sound.obj : error LNK2001: unresolved external symbol "public: enum FMOD_RESULT __cdecl FMOD::System::init(int,unsigned int,void *)" (?init@System@FMOD@@QEAA?AW4FMOD_RESULT@@HIPEAX@Z)
+Sound.obj : error LNK2001: unresolved external symbol "public: enum FMOD_RESULT __cdecl FMOD::Sound::setMode(unsigned int)" (?setMode@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@I@Z)
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewBufferSubData
+TextLabel.obj : error LNK2001: unresolved external symbol __imp_FT_New_Face
+TextLabel.obj : error LNK2001: unresolved external symbol __imp_FT_Done_FreeType
+TextLabel.obj : error LNK2001: unresolved external symbol __imp_FT_Done_Face
+TextLabel.obj : error LNK2001: unresolved external symbol __imp_FT_Init_FreeType
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewUniform3f
+TextLabel.obj : error LNK2001: unresolved external symbol __imp_FT_Load_Char
+TextLabel.obj : error LNK2001: unresolved external symbol __imp_FT_Set_Pixel_Sizes
+C:\Users\Ethan\Dropbox\Uni\Year 2\Semester 2\Due Excercises and Projects\Angry Bords\x64\Release\My First OpenGL.exe : fatal error LNK1120: 58 unresolved externals

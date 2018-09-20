@@ -1,0 +1,172 @@
+﻿UFO.obj : error LNK2001: unresolved external symbol SOIL_load_image
+UISprite.obj : error LNK2001: unresolved external symbol SOIL_load_image
+CubeMap.obj : error LNK2001: unresolved external symbol SOIL_load_image
+OtherPlayer.obj : error LNK2001: unresolved external symbol SOIL_load_image
+Player.obj : error LNK2001: unresolved external symbol SOIL_load_image
+Sprite.obj : error LNK2001: unresolved external symbol SOIL_load_image
+UFO.obj : error LNK2001: unresolved external symbol SOIL_free_image_data
+UISprite.obj : error LNK2001: unresolved external symbol SOIL_free_image_data
+CubeMap.obj : error LNK2001: unresolved external symbol SOIL_free_image_data
+OtherPlayer.obj : error LNK2001: unresolved external symbol SOIL_free_image_data
+Player.obj : error LNK2001: unresolved external symbol SOIL_free_image_data
+Sprite.obj : error LNK2001: unresolved external symbol SOIL_free_image_data
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+Player.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+Player.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+Sphere.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+Player.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+Sphere.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+Player.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+Sphere.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+Player.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+Sphere.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+Player.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+Player.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+Player.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+Player.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+Player.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+Sphere.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewGenerateMipmap
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewGenerateMipmap
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewGenerateMipmap
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewGenerateMipmap
+Player.obj : error LNK2001: unresolved external symbol __imp___glewGenerateMipmap
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewGenerateMipmap
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+Player.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+Sphere.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+Sprite.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+UFO.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+CubeMap.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+OtherPlayer.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+Player.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+Sphere.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+main.obj : error LNK2019: unresolved external symbol __imp_glewInit referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowPosition referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowSize referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp_glutInitDisplayMode referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp_glutMainLoop referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp_glutPostRedisplay referenced in function "void __cdecl update(void)" (?update@@YAXXZ)
+main.obj : error LNK2019: unresolved external symbol __imp_glutSwapBuffers referenced in function "void __cdecl render(void)" (?render@@YAXXZ)
+main.obj : error LNK2019: unresolved external symbol __imp_glutIdleFunc referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp_glutKeyboardFunc referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp_glutDisplayFunc referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp_glutKeyboardUpFunc referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp___glutInitWithExit referenced in function glutInit_ATEXIT_HACK
+main.obj : error LNK2019: unresolved external symbol __imp___glutCreateWindowWithExit referenced in function glutCreateWindow_ATEXIT_HACK
+main.obj : error LNK2019: unresolved external symbol __imp_glutSetOption referenced in function main
+MainMenu.obj : error LNK2019: unresolved external symbol __imp_glutGet referenced in function "public: virtual void __cdecl MainMenu::Update(void)" (?Update@MainMenu@@UEAAXXZ)
+OtherPlayer.obj : error LNK2019: unresolved external symbol "public: __cdecl Assimp::Importer::Importer(void)" (??0Importer@Assimp@@QEAA@XZ) referenced in function "private: void __cdecl Model::loadModel(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?loadModel@Model@@AEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Player.obj : error LNK2001: unresolved external symbol "public: __cdecl Assimp::Importer::Importer(void)" (??0Importer@Assimp@@QEAA@XZ)
+UFO.obj : error LNK2001: unresolved external symbol "public: __cdecl Assimp::Importer::Importer(void)" (??0Importer@Assimp@@QEAA@XZ)
+OtherPlayer.obj : error LNK2019: unresolved external symbol "public: __cdecl Assimp::Importer::~Importer(void)" (??1Importer@Assimp@@QEAA@XZ) referenced in function "private: void __cdecl Model::loadModel(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?loadModel@Model@@AEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Player.obj : error LNK2001: unresolved external symbol "public: __cdecl Assimp::Importer::~Importer(void)" (??1Importer@Assimp@@QEAA@XZ)
+UFO.obj : error LNK2001: unresolved external symbol "public: __cdecl Assimp::Importer::~Importer(void)" (??1Importer@Assimp@@QEAA@XZ)
+OtherPlayer.obj : error LNK2019: unresolved external symbol "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(char const *,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@PEBDI@Z) referenced in function "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@Z)
+Player.obj : error LNK2001: unresolved external symbol "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(char const *,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@PEBDI@Z)
+UFO.obj : error LNK2001: unresolved external symbol "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(char const *,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@PEBDI@Z)
+OtherPlayer.obj : error LNK2019: unresolved external symbol "public: char const * __cdecl Assimp::Importer::GetErrorString(void)const " (?GetErrorString@Importer@Assimp@@QEBAPEBDXZ) referenced in function "private: void __cdecl Model::loadModel(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?loadModel@Model@@AEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Player.obj : error LNK2001: unresolved external symbol "public: char const * __cdecl Assimp::Importer::GetErrorString(void)const " (?GetErrorString@Importer@Assimp@@QEBAPEBDXZ)
+UFO.obj : error LNK2001: unresolved external symbol "public: char const * __cdecl Assimp::Importer::GetErrorString(void)const " (?GetErrorString@Importer@Assimp@@QEBAPEBDXZ)
+OtherPlayer.obj : error LNK2019: unresolved external symbol aiGetMaterialTextureCount referenced in function "public: unsigned int __cdecl aiMaterial::GetTextureCount(enum aiTextureType)const " (?GetTextureCount@aiMaterial@@QEBAIW4aiTextureType@@@Z)
+Player.obj : error LNK2001: unresolved external symbol aiGetMaterialTextureCount
+UFO.obj : error LNK2001: unresolved external symbol aiGetMaterialTextureCount
+OtherPlayer.obj : error LNK2019: unresolved external symbol aiGetMaterialTexture referenced in function "public: enum aiReturn __cdecl aiMaterial::GetTexture(enum aiTextureType,unsigned int,struct aiString *,enum aiTextureMapping *,unsigned int *,float *,enum aiTextureOp *,enum aiTextureMapMode *)const " (?GetTexture@aiMaterial@@QEBA?AW4aiReturn@@W4aiTextureType@@IPEAUaiString@@PEAW4aiTextureMapping@@PEAIPEAMPEAW4aiTextureOp@@PEAW4aiTextureMapMode@@@Z)
+Player.obj : error LNK2001: unresolved external symbol aiGetMaterialTexture
+UFO.obj : error LNK2001: unresolved external symbol aiGetMaterialTexture
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewAttachShader
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewCompileShader
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewCreateProgram
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewCreateShader
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewGetProgramInfoLog
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewGetProgramiv
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderInfoLog
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderiv
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewLinkProgram
+ShaderLoader.obj : error LNK2001: unresolved external symbol __imp___glewShaderSource
+Sound.obj : error LNK2019: unresolved external symbol FMOD_System_Create referenced in function "enum FMOD_RESULT __cdecl FMOD::System_Create(class FMOD::System * *)" (?System_Create@FMOD@@YA?AW4FMOD_RESULT@@PEAPEAVSystem@1@@Z)
+Sound.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __cdecl FMOD::System::init(int,unsigned int,void *)" (?init@System@FMOD@@QEAA?AW4FMOD_RESULT@@HIPEAX@Z) referenced in function "public: bool __cdecl Sound::InitFmod(void)" (?InitFmod@Sound@@QEAA_NXZ)
+Sound.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __cdecl FMOD::System::createSound(char const *,unsigned int,struct FMOD_CREATESOUNDEXINFO *,class FMOD::Sound * *)" (?createSound@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDIPEAUFMOD_CREATESOUNDEXINFO@@PEAPEAVSound@2@@Z) referenced in function "public: bool const __cdecl Sound::LoadAudio(void)" (?LoadAudio@Sound@@QEAA?B_NXZ)
+Sound.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __cdecl FMOD::Sound::setMode(unsigned int)" (?setMode@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@I@Z) referenced in function "public: bool const __cdecl Sound::LoadAudio(void)" (?LoadAudio@Sound@@QEAA?B_NXZ)
+TextLabel.obj : error LNK2019: unresolved external symbol __imp_FT_Init_FreeType referenced in function "public: __cdecl TextLabel::TextLabel(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct glm::tvec2<float,0>)" (??0TextLabel@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0U?$tvec2@M$0A@@glm@@@Z)
+TextLabel.obj : error LNK2019: unresolved external symbol __imp_FT_Done_FreeType referenced in function "public: __cdecl TextLabel::TextLabel(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct glm::tvec2<float,0>)" (??0TextLabel@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0U?$tvec2@M$0A@@glm@@@Z)
+TextLabel.obj : error LNK2019: unresolved external symbol __imp_FT_New_Face referenced in function "public: __cdecl TextLabel::TextLabel(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct glm::tvec2<float,0>)" (??0TextLabel@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0U?$tvec2@M$0A@@glm@@@Z)
+TextLabel.obj : error LNK2019: unresolved external symbol __imp_FT_Done_Face referenced in function "public: __cdecl TextLabel::TextLabel(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct glm::tvec2<float,0>)" (??0TextLabel@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0U?$tvec2@M$0A@@glm@@@Z)
+TextLabel.obj : error LNK2019: unresolved external symbol __imp_FT_Set_Pixel_Sizes referenced in function "public: __cdecl TextLabel::TextLabel(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct glm::tvec2<float,0>)" (??0TextLabel@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0U?$tvec2@M$0A@@glm@@@Z)
+TextLabel.obj : error LNK2019: unresolved external symbol __imp_FT_Load_Char referenced in function "public: __cdecl TextLabel::TextLabel(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct glm::tvec2<float,0>)" (??0TextLabel@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0U?$tvec2@M$0A@@glm@@@Z)
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewBufferSubData
+TextLabel.obj : error LNK2001: unresolved external symbol __imp___glewUniform3f
+UISprite.obj : error LNK2001: unresolved external symbol __imp___glewUniform3f
+C:\Users\Ethan\Dropbox\Uni\Year 2\Semester 2\Due Excercises and Projects\Angry Bords\My First OpenGL\\Dependencies\freeglut\freeglut.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Ethan\Dropbox\Uni\Year 2\Semester 2\Due Excercises and Projects\Angry Bords\My First OpenGL\\Dependencies\glew\glew32.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Ethan\Dropbox\Uni\Year 2\Semester 2\Due Excercises and Projects\Angry Bords\My First OpenGL\\Dependencies\soil\SOIL.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Ethan\Dropbox\Uni\Year 2\Semester 2\Due Excercises and Projects\Angry Bords\My First OpenGL\\Dependencies\FMOD\fmod_vc.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Ethan\Dropbox\Uni\Year 2\Semester 2\Due Excercises and Projects\Angry Bords\My First OpenGL\\Dependencies\freetype\freetype.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Ethan\Dropbox\Uni\Year 2\Semester 2\Due Excercises and Projects\Angry Bords\My First OpenGL\\Dependencies\assimp\assimp-vc130-mtd.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Ethan\Dropbox\Uni\Year 2\Semester 2\Due Excercises and Projects\Angry Bords\My First OpenGL\\Dependencies\freeglut\freeglutd.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Ethan\Dropbox\Uni\Year 2\Semester 2\Due Excercises and Projects\Angry Bords\x64\Debug\My First OpenGL.exe : fatal error LNK1120: 58 unresolved externals
