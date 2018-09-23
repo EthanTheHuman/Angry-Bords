@@ -17,6 +17,7 @@
 #include "Model.h"
 #include "TextLabel.h"
 #include "Utils.h"
+#include "Utils2.h"
 #include "CubeMap.h"
 #include "dependencies\FMOD\fmod.hpp"
 
@@ -36,8 +37,24 @@ void render();
 void Keyboard_Down(unsigned char key, int x, int y);
 void Keyboard_Up(unsigned char key, int x, int y);
 void KeyboardUpdate();
+void Mouse(int button, int glutState, int x, int y);
 
 void update();
+
+//Mouse Stuff
+enum enumInputMouse
+{
+	MOUSE_LEFT,
+	MOUSE_MIDDLE,
+	MOUSE_RIGHT,
+};
+unsigned char MouseState[3];
+GLfloat MouseSensitivity = 0.05f;
+GLfloat Yaw = 0.0f;
+GLfloat Pitch = 0.0f;
+GLfloat LastX = (float)SRCWIDTH * 0.5f;
+GLfloat LastY = (float)SRCHEIGHT * 0.5f;
+bool FirstMouse = true;
 
 //Global Var
 Camera * MyCamera;
@@ -65,6 +82,9 @@ int main(int argc, char **argv)
 	//Updated Keyboard Functions
 	glutKeyboardFunc(Keyboard_Down);
 	glutKeyboardUpFunc(Keyboard_Up);
+	glutMouseFunc(Mouse);
+	//glutPassiveMotionFunc(MousePassiveMovement);
+
 
 	glEnable(GL_MULTISAMPLE);
 	glEnable(GL_BLEND);
@@ -127,4 +147,45 @@ void KeyboardUpdate() {
 			KeyState[i] = INPUT_RELEASED;
 		}
 	}
+}
+
+void Mouse(int button, int glutState, int x, int y)
+{
+	if (button < 3)
+	{
+		MouseState[button] = (glutState == GLUT_DOWN) ? INPUT_HOLD : INPUT_RELEASED;
+	}
+}
+
+void MousePassiveMovement(int x, int y)
+{
+	if (FirstMouse == true)
+	{
+		LastX = x;
+		LastY = y;
+		FirstMouse = false;
+	}
+	GLfloat xOffset = x - LastX;
+	GLfloat yOffset = y - LastY;
+	LastX = x;
+	LastY = y;
+
+	xOffset *= MouseSensitivity;
+	yOffset *= MouseSensitivity;
+	Yaw -= xOffset;
+	Pitch -= yOffset;
+
+	if (Pitch > 89.0f)
+	{
+		Pitch = 89.0f;
+	}
+	if (Pitch < -89.0f)
+	{
+		Pitch = -89.0f;
+	}
+	glm::vec3 frontVector(-cos(glm::radians(Pitch))*sin(glm::radians(Yaw)),
+		sin(glm::radians(Pitch)),
+		-cos(glm::radians(Pitch)) * cos(glm::radians(Yaw)));
+	//cameraFront = glm::normalize(frontVector);
+
 }

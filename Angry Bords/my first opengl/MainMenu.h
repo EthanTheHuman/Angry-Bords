@@ -26,6 +26,7 @@
 #include "UFO.h"
 #include "dependencies\FMOD\fmod.hpp"
 #include "dependencies\Box2D\Box2D.h"
+#include "dependencies\Box2D\Rope\b2Rope.h"
 
 enum Menus {
 	MAIN,
@@ -60,6 +61,7 @@ public:
 	int32 velocityIterations;
 	int32 positionIterations;
 	Sprite* Puar;
+	b2RopeDef RopeJoint;
 
 private:
 	// List of objects
