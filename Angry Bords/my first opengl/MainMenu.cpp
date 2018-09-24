@@ -174,5 +174,35 @@ void MainMenu::MoveCharacter(unsigned char KeyState[255]) {
 
 void MainMenu::MouseInput(int x, int y)
 {
-	
+	worldX = (x - 400) / 10;
+	worldY = (y - 300) / 10;
+
+	cout << worldY << " ";
+
+	b2MouseJointDef md;
+	b2BodyDef temp;
+	md.bodyA = world.CreateBody(&temp);
+	md.bodyB = Puar.Box.body;
+
+	md.target.Set(worldX, worldY);
+
+	md.collideConnected = false;
+	md.maxForce = 5000;
+	md.frequencyHz = 5;
+	md.dampingRatio = 0.9;
+	cout << md.target.y << endl;
+
+	if (mouseJoint != nullptr) {
+		world.DestroyJoint(mouseJoint);
+		mouseJoint = NULL;
+	}
+	mouseJoint = static_cast<b2MouseJoint*>(world.CreateJoint(&md));
+}
+
+void MainMenu::MouseClicks(unsigned char MouseState[3])
+{
+	if (MouseState[0] == INPUT_RELEASED) {
+		world.DestroyJoint(mouseJoint);
+		mouseJoint = NULL;
+	}
 }

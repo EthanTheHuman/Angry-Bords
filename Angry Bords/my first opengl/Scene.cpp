@@ -52,6 +52,10 @@ void Scene::MouseInput(int x, int y) {
 
 }
 
+void Scene::MouseClicks(unsigned char MouseState[3]) {
+
+}
+
 bool Scene::IsColliding(glm::vec3 C1, glm::vec3 C2, float R1, float R2)
 {
 	glm::vec3 temp(C2.x - C1.x, C2.y - C1.y, C2.z - C1.z);

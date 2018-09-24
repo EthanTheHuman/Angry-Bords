@@ -68,19 +68,7 @@ public:
 	void Update();
 	void MoveCharacter(unsigned char KeyState[255]);
 	void MouseInput(int, int);
-
-	b2BodyDef groundBodyDef;
-	b2Body* groundBody;
-	b2PolygonShape groundBox;
-
-	GameObject Puar;
-	GameObject Puar2;
-	std::vector<GameObject> Obstacles;
-	std::vector<GameObject> Enemies;
-
-	float32 timeStep;
-	int32 velocityIterations;
-	int32 positionIterations;
+	void MouseClicks(unsigned char MouseState[3]);
 
 private:
 	// List of objects
@@ -103,4 +91,23 @@ private:
 	Menus menu = MAIN;
 	TextLabel * TempLabel;
 	int i2DScalar = 20;
+
+	//Box 2D 
+	b2BodyDef groundBodyDef;
+	b2Body* groundBody;
+	b2PolygonShape groundBox;
+
+	GameObject Puar;
+	GameObject Puar2;
+	std::vector<GameObject> Obstacles;
+	std::vector<GameObject> Enemies;
+
+	float32 timeStep;
+	int32 velocityIterations;
+	int32 positionIterations;
+
+	b2MouseJoint * mouseJoint;
+
+	float worldX;
+	float worldY;
 };
