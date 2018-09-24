@@ -10,9 +10,7 @@ public:
 	FMOD::Channel* Musicchannel;
 	FMOD::Channel* fxchannel;
 	FMOD::System* audioMgr;
-	FMOD::Sound* fxSplat;
 	FMOD::Sound* bgmTheme;
-	FMOD::Sound* menuTheme;
 
 	bool InitFmod();
 	const bool LoadAudio();
