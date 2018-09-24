@@ -1,10 +1,17 @@
-﻿  MainMenu.cpp
+﻿  GameManager.cpp
 c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(92): warning C4018: '<': signed/unsigned mismatch
-c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(98): warning C4018: '<': signed/unsigned mismatch
-c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(111): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  MainMenu.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(106): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(112): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(119): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(132): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Scene.cpp
+  Sound.cpp
+  main.cpp
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Generating code
-  0 of 649 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  7 of 655 functions ( 1.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code

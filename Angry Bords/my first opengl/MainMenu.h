@@ -76,6 +76,7 @@ public:
 	GameObject Puar;
 	GameObject Puar2;
 	std::vector<GameObject> Obstacles;
+	std::vector<GameObject> Enemies;
 
 	float32 timeStep;
 	int32 velocityIterations;

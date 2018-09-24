@@ -18,10 +18,16 @@ void MainMenu::Init()
 	AmbientShader = shaderloader.CreateProgram("Shaders/Ambient.vs", "Shaders/Ambient.fs");
 	TextShader = shaderloader.CreateProgram("Shaders/Text.vs", "Shaders/Text.fs");
 
+	//Sound
+	Sound::GetInstance()->Musicchannel->stop();
+	Sound::GetInstance()->audioMgr->playSound(Sound::GetInstance()->bgmTheme, 0, false, &Sound::GetInstance()->Musicchannel);
+
 	//Background elements
 	Sprite* TempSprite = new Sprite("Textures/Background/BG.png", MyCamera, SpriteShader);
 	BGElements.push_back(TempSprite); 
 	TempSprite = new Sprite("Textures/Background/Ground.png", MyCamera, SpriteShader);
+	BGElements.push_back(TempSprite);
+	TempSprite = new Sprite("Textures/Logos.png", MyCamera, SpriteShader);
 	BGElements.push_back(TempSprite);
 
 	//Box2D stuff
@@ -51,16 +57,24 @@ void MainMenu::Init()
 
 	GameObject TempGameObject;
 	TempGameObject.Sprite = Sprite("Textures/Roblock.png", MyCamera, SpriteShader);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, 00.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, -25.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, 5.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, -20.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, 10.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, -15.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, 15.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, -10.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, 20.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, -5.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
+
+	TempGameObject.Sprite = Sprite("Textures/Hercule.png", MyCamera, SpriteShader);
+	TempGameObject.Sprite.SetScale(glm::vec3(-1, 1, 1));
+	TempGameObject.Box = PhysicsBox(&world, 19.0f, 50.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Enemies.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 20.0f, 60.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Enemies.push_back(TempGameObject);
+
 
 
 
@@ -99,6 +113,13 @@ void MainMenu::Render()
 	{
 		Obstacles[i].Update();
 		Obstacles[i].Sprite.render();
+	}
+
+	//Enemies
+	for (int i = 0; i < Enemies.size(); i++)
+	{
+		Enemies[i].Update();
+		Enemies[i].Sprite.render();
 	}
 
 	Puar.Sprite.render();
