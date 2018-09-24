@@ -39,9 +39,12 @@ bool Sound::InitFmod()
 const bool Sound::LoadAudio()
 {
 	FMOD_RESULT result;
-	result = audioMgr->createSound("Sounds/music.mp3", FMOD_DEFAULT, 0, &bgmTheme);
+	result = audioMgr->createSound("Sounds/Splat.wav", FMOD_DEFAULT, 0, &fxSplat);
+	result = audioMgr->createSound("Sounds/Game.mp3", FMOD_DEFAULT, 0, &bgmTheme);
+	result = audioMgr->createSound("Sounds/Menu.mp3", FMOD_DEFAULT, 0, &menuTheme);
 
 	bgmTheme->setMode(FMOD_LOOP_NORMAL);
+	menuTheme->setMode(FMOD_LOOP_NORMAL);
 
 	return true;
 }
