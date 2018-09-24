@@ -28,6 +28,7 @@
 #include "dependencies\Box2D\Box2D.h"
 #include "dependencies\Box2D\Rope\b2Rope.h"
 #include "PhysicsBox.h"
+#include <vector>
 
 enum Menus {
 	MAIN,
@@ -51,6 +52,7 @@ struct GameObject
 
 	void Update() {
 		Sprite.SetTranslation(glm::vec3(Box.body->GetPosition().x * 20, Box.body->GetPosition().y * 20, 0));
+		Sprite.SetRotation(glm::vec3((Box.body->GetAngle() / 3.14 * 180), (Box.body->GetAngle() / 3.14 * 180), (Box.body->GetAngle() / 3.14 * 180)));
 	}
 };
 
@@ -73,7 +75,7 @@ public:
 
 	GameObject Puar;
 	GameObject Puar2;
-	b2RopeDef RopeJoint;
+	std::vector<GameObject> Obstacles;
 
 	float32 timeStep;
 	int32 velocityIterations;
