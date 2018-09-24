@@ -1,7 +1,7 @@
 #include "MainMenu.h"
 
 // Define the gravity vector.
-b2Vec2 gravity(0.0f, -9.81f);
+b2Vec2 gravity(0.0f, -0.981f);
 
 // Construct a world object, which will hold and simulate the rigid bodies.
 b2World world(gravity);
@@ -29,7 +29,7 @@ void MainMenu::Init()
 	//Box2D stuff
 	//-------------------------------------------------------------------------------------------------------------------------------
 	// Define the ground body.
-	groundBodyDef.position.Set(0.0f, -80.0f);
+	groundBodyDef.position.Set(0.0f, -40.0f);
 
 	// Call the body factory which allocates memory for the ground body
 	// from a pool and creates the ground box shape (also from a pool).
@@ -40,33 +40,16 @@ void MainMenu::Init()
 	
 
 	// The extents are the half-widths of the box.
-	groundBox.SetAsBox(200.0f, 1.0f);
+	groundBox.SetAsBox(200.0f, 10.0f);
 
 	// Add the ground fixture to the ground body.
 	groundBody->CreateFixture(&groundBox, 0.0f);
 
-	// Define the dynamic body. We set its position and call the body factory.
-	bodyDef.type = b2_dynamicBody;
-	bodyDef.position.Set(-23.5f, -18.5f);
-	body = world.CreateBody(&bodyDef);
-	body->SetLinearDamping(1);
-	body->SetGravityScale(1.0);
+	Puar.Sprite = Sprite("Textures/Puar.png", MyCamera, SpriteShader);
+	Puar.Box = PhysicsBox(&world, -23.5f, -18.5f, 3.0f, 2.0f, 1.0f, 0.3f, 1.0f, 1.0f);
 
-	// Define another box shape for our dynamic body.
-	dynamicBox.SetAsBox(31.0f, 52.0f);
-
-	// Define the dynamic body fixture.
-	fixtureDef.shape = &dynamicBox;
-
-	// Set the box density to be non-zero, so it will be dynamic.
-	fixtureDef.density = 1.0f;
-
-	// Override the default friction.
-	fixtureDef.friction = 0.3f;
-
-	// Add the shape to the body.
-	body->CreateFixture(&fixtureDef);
-	Puar = new Sprite("Textures/Puar.png", MyCamera, SpriteShader);
+	Puar2.Sprite = Sprite("Textures/Puar.png", MyCamera, SpriteShader);
+	Puar2.Box = PhysicsBox(&world, -22.5f, 30.0f, 3.0f, 2.0f, 1.0f, 0.3f, 1.0f, 1.0f);
 
 	//Rope joint
 	RopeJoint.gravity = gravity;
@@ -102,8 +85,10 @@ void MainMenu::Render()
 		BGElements[i]->render();
 	}
 
-	Puar->SetTranslation(glm::vec3(body->GetPosition().x * i2DScalar, body->GetPosition().y * i2DScalar, 0));
-	Puar->render();
+	Puar.Sprite.SetTranslation(glm::vec3(Puar.Box.body->GetPosition().x * i2DScalar, Puar.Box.body->GetPosition().y * i2DScalar, 0));
+	Puar.Sprite.render();
+	Puar2.Sprite.SetTranslation(glm::vec3(Puar2.Box.body->GetPosition().x * i2DScalar, Puar2.Box.body->GetPosition().y * i2DScalar, 0));
+	Puar2.Sprite.render();
 }
 
 float oldTimeSinceStart = 0;

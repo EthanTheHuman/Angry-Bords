@@ -27,6 +27,7 @@
 #include "dependencies\FMOD\fmod.hpp"
 #include "dependencies\Box2D\Box2D.h"
 #include "dependencies\Box2D\Rope\b2Rope.h"
+#include "PhysicsBox.h"
 
 enum Menus {
 	MAIN,
@@ -36,6 +37,16 @@ enum Menus {
 	HOST,
 	JOIN,
 	LOBBY
+};
+
+struct GameObject
+{
+	PhysicsBox Box;
+	Sprite Sprite;
+
+	render()
+	{
+	}
 };
 
 class MainMenu :
@@ -55,16 +66,13 @@ public:
 	b2Body* groundBody;
 	b2PolygonShape groundBox;
 
-	b2BodyDef bodyDef;
-	b2Body* body;
-	b2PolygonShape dynamicBox;
-	b2FixtureDef fixtureDef;
+	GameObject Puar;
+	GameObject Puar2;
+	b2RopeDef RopeJoint;
+
 	float32 timeStep;
 	int32 velocityIterations;
 	int32 positionIterations;
-
-	Sprite* Puar;
-	b2RopeDef RopeJoint;
 
 private:
 	// List of objects

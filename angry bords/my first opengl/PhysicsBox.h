@@ -26,9 +26,6 @@ public:
 	b2Body* body;
 	b2PolygonShape dynamicBox;
 	b2FixtureDef fixtureDef;
-	float32 timeStep;
-	int32 velocityIterations;
-	int32 positionIterations;
 
 };
 
