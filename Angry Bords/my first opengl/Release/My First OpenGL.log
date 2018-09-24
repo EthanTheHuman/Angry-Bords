@@ -1,5 +1,6 @@
 ﻿  MainMenu.cpp
 <<<<<<< HEAD
+<<<<<<< HEAD
 c:\users\brandon\documents\github\angry-bords\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 c:\users\brandon\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(86): warning C4018: '<': signed/unsigned mismatch
 c:\users\brandon\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(96): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
@@ -8,6 +9,14 @@ c:\users\brandon\documents\github\angry-bords\angry bords\my first opengl\mainme
 c:\users\brandon\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(156): warning C4305: '=': truncation from 'double' to 'float32'
   Generating code
   1 of 632 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+=======
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(92): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(98): warning C4018: '<': signed/unsigned mismatch
+c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(111): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Generating code
+  0 of 649 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+>>>>>>> bfcf5f789ee2f7a4aa85825a31ec93588e6cbb65
 =======
 c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\textlabel.h(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 c:\users\ethan\dropbox\uni\year 2\semester 2\due excercises and projects\angry-bords\angry bords\my first opengl\mainmenu.cpp(92): warning C4018: '<': signed/unsigned mismatch
