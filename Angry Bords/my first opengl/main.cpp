@@ -38,6 +38,7 @@ void Keyboard_Down(unsigned char key, int x, int y);
 void Keyboard_Up(unsigned char key, int x, int y);
 void KeyboardUpdate();
 void Mouse(int button, int glutState, int x, int y);
+void MouseMovement(int, int);
 
 void update();
 
@@ -83,7 +84,7 @@ int main(int argc, char **argv)
 	glutKeyboardFunc(Keyboard_Down);
 	glutKeyboardUpFunc(Keyboard_Up);
 	glutMouseFunc(Mouse);
-	//glutPassiveMotionFunc(MousePassiveMovement);
+	glutMotionFunc(MouseMovement);
 
 
 	glEnable(GL_MULTISAMPLE);
@@ -157,35 +158,7 @@ void Mouse(int button, int glutState, int x, int y)
 	}
 }
 
-void MousePassiveMovement(int x, int y)
+void MouseMovement(int x, int y)
 {
-	if (FirstMouse == true)
-	{
-		LastX = x;
-		LastY = y;
-		FirstMouse = false;
-	}
-	GLfloat xOffset = x - LastX;
-	GLfloat yOffset = y - LastY;
-	LastX = x;
-	LastY = y;
-
-	xOffset *= MouseSensitivity;
-	yOffset *= MouseSensitivity;
-	Yaw -= xOffset;
-	Pitch -= yOffset;
-
-	if (Pitch > 89.0f)
-	{
-		Pitch = 89.0f;
-	}
-	if (Pitch < -89.0f)
-	{
-		Pitch = -89.0f;
-	}
-	glm::vec3 frontVector(-cos(glm::radians(Pitch))*sin(glm::radians(Yaw)),
-		sin(glm::radians(Pitch)),
-		-cos(glm::radians(Pitch)) * cos(glm::radians(Yaw)));
-	//cameraFront = glm::normalize(frontVector);
-
+	cout << x << " " << y << endl;
 }

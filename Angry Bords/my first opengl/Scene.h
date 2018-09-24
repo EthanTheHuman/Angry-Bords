@@ -20,6 +20,7 @@ public:
 	virtual void Deconstruct();
 	virtual void Render();
 	virtual void MoveCharacter(unsigned char KeyState[255]);
+	void MouseInput(int, int);
 	virtual bool IsColliding(glm::vec3, glm::vec3, float, float);
 	virtual void ChangeNames(std::vector<std::string> _strings);
 	virtual void ChangeHostNames(std::vector<std::string> _strings);
