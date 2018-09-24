@@ -56,23 +56,53 @@ void MainMenu::Init()
 	Puar2.Box = PhysicsBox(&world, -21.0f, 30.0f, 2.0f, 3.0f, 1.0f, 0.3f, 1.0f, 1.0f);
 
 	GameObject TempGameObject;
+
+	//Square
 	TempGameObject.Sprite = Sprite("Textures/Roblock.png", MyCamera, SpriteShader);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, -25.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 10.0f, -25.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, -20.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 10.0f, -20.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, -15.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
-	Obstacles.push_back(TempGameObject);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, -10.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
-	Obstacles.push_back(TempGameObject);
-	TempGameObject.Box = PhysicsBox(&world, 15.0f, -5.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 10.0f, -15.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
 
+	TempGameObject.Box = PhysicsBox(&world, 20.0f, -25.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 20.0f, -20.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 20.0f, -10.0, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 20.0f, -5.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+
+	TempGameObject.Box = PhysicsBox(&world, 30.0f, -25.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 30.0f, -20.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 30.0f, -15.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+
+	//2-wide
+	TempGameObject.Sprite = Sprite("Textures/Wideblock.png", MyCamera, SpriteShader);
+	TempGameObject.Box = PhysicsBox(&world, 12.5f, -10.0f, 4.99f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 27.5f, -10.0f, 4.99f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+
+	//3-wide
+	TempGameObject.Sprite = Sprite("Textures/Widerblock.png", MyCamera, SpriteShader);
+	TempGameObject.Box = PhysicsBox(&world, 20.0f, -15.0f, 7.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+
+
+	//Enemies
 	TempGameObject.Sprite = Sprite("Textures/Hercule.png", MyCamera, SpriteShader);
 	TempGameObject.Sprite.SetScale(glm::vec3(-1, 1, 1));
-	TempGameObject.Box = PhysicsBox(&world, 19.0f, 50.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, -20.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Enemies.push_back(TempGameObject);
-	TempGameObject.Box = PhysicsBox(&world, 20.0f, 60.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
+	TempGameObject.Box = PhysicsBox(&world, 20.0f, 10.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Enemies.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 25.0f, -20.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Enemies.push_back(TempGameObject);
 
 
