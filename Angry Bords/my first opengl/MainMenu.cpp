@@ -1,7 +1,7 @@
 #include "MainMenu.h"
 
 // Define the gravity vector.
-b2Vec2 gravity(0.0f, -0.981f);
+b2Vec2 gravity(0.0f, -9.81f);
 
 // Construct a world object, which will hold and simulate the rigid bodies.
 b2World world(gravity);
@@ -25,7 +25,7 @@ void MainMenu::Init()
 	BGElements.push_back(TempSprite);
 
 	//Box2D stuff
-	//-------------------------------------------------------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------------
 	// Define the ground body.
 	groundBodyDef.position.Set(0.0f, -40.0f);
 
@@ -33,6 +33,14 @@ void MainMenu::Init()
 	// from a pool and creates the ground box shape (also from a pool).
 	// The body is also added to the world.
 	groundBody = world.CreateBody(&groundBodyDef);
+
+	
+
+	DebugDraw bebugDraw;
+	world.SetDebugDraw(&bebugDraw);
+	uint32 flags = 0;
+	flags += b2Draw::e_shapeBit;
+	bebugDraw.SetFlags(flags);
 
 	// Define the ground box shape.
 	
@@ -43,14 +51,30 @@ void MainMenu::Init()
 	// Add the ground fixture to the ground body.
 	groundBody->CreateFixture(&groundBox, 0.0f);
 
-	Puar.Sprite = Sprite("Textures/Puar.png", MyCamera, SpriteShader);
-	Puar.Box = PhysicsBox(&world, -23.5f, -18.5f, 3.0f, 2.0f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Puar.Sprite = Sprite("Textures/Krillin.png", MyCamera, SpriteShader);
+	Puar.Box = PhysicsBox(&world, -23.5f, -18.5f, 2.0f, 3.0f, 1.0f, 0.3f, 1.0f, 1.0f);
 
-	Puar2.Sprite = Sprite("Textures/Puar.png", MyCamera, SpriteShader);
-	Puar2.Box = PhysicsBox(&world, -22.5f, 30.0f, 3.0f, 2.0f, 1.0f, 0.3f, 1.0f, 1.0f);
-
+<<<<<<< HEAD
 	//Rope joint
 	RopeJoint.gravity = gravity;
+=======
+	Puar2.Sprite = Sprite("Textures/Krillin.png", MyCamera, SpriteShader);
+	Puar2.Box = PhysicsBox(&world, -21.0f, 30.0f, 2.0f, 3.0f, 1.0f, 0.3f, 1.0f, 1.0f);
+
+	GameObject TempGameObject;
+	TempGameObject.Sprite = Sprite("Textures/Roblock.png", MyCamera, SpriteShader);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, 00.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, 5.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, 10.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, 15.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, 20.0f, 2.5f, 2.5f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+
+>>>>>>> bfcf5f789ee2f7a4aa85825a31ec93588e6cbb65
 
 
 	// Prepare for simulation. Typically we use a time step of 1/60 of a
@@ -82,9 +106,18 @@ void MainMenu::Render()
 	{
 		BGElements[i]->render();
 	}
+<<<<<<< HEAD
+=======
 
+	//Obstacles
+	for (int i = 0; i < Obstacles.size(); i++)
+	{
+		Obstacles[i].Update();
+		Obstacles[i].Sprite.render();
+	}
+
+>>>>>>> bfcf5f789ee2f7a4aa85825a31ec93588e6cbb65
 	Puar.Sprite.render();
-	Puar2.Sprite.render();
 }
 
 float oldTimeSinceStart = 0;
@@ -97,7 +130,6 @@ void MainMenu::Update()
 	// It is generally best to keep the time step and iterations fixed.
 
 	Puar.Update();
-	Puar2.Update();
 
 	world.Step(timeStep, velocityIterations, positionIterations);
 }
@@ -130,10 +162,41 @@ void MainMenu::MoveCharacter(unsigned char KeyState[255]) {
 	}
 	if (KeyState[(unsigned char)'s'] == INPUT_FIRST_PRESS)
 	{
+
 	}
 }
 
 void MainMenu::MouseInput(int x, int y)
 {
-	
+	worldX = (x - 400) / 10;
+	worldY = (y - 300) / 10;
+
+	cout << worldY << " ";
+
+	b2MouseJointDef md;
+	b2BodyDef temp;
+	md.bodyA = world.CreateBody(&temp);
+	md.bodyB = Puar.Box.body;
+
+	md.target.Set(worldX, worldY);
+
+	md.collideConnected = false;
+	md.maxForce = 5000;
+	md.frequencyHz = 5;
+	md.dampingRatio = 0.9;
+	cout << md.target.y << endl;
+
+	if (mouseJoint != nullptr) {
+		world.DestroyJoint(mouseJoint);
+		mouseJoint = NULL;
+	}
+	mouseJoint = static_cast<b2MouseJoint*>(world.CreateJoint(&md));
+}
+
+void MainMenu::MouseClicks(unsigned char MouseState[3])
+{
+	if (MouseState[0] == INPUT_RELEASED) {
+		world.DestroyJoint(mouseJoint);
+		mouseJoint = NULL;
+	}
 }

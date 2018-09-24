@@ -26,6 +26,5 @@ public:
 	b2Body* body;
 	b2PolygonShape dynamicBox;
 	b2FixtureDef fixtureDef;
-
 };
 
