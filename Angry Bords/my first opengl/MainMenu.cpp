@@ -147,3 +147,8 @@ void MainMenu::MoveCharacter(unsigned char KeyState[255]) {
 	{
 	}
 }
+
+void MainMenu::MouseInput(int x, int y)
+{
+
+}

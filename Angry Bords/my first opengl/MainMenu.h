@@ -49,6 +49,7 @@ public:
 	void Render();
 	void Update();
 	void MoveCharacter(unsigned char KeyState[255]);
+	void MouseInput(int, int);
 
 	b2BodyDef groundBodyDef;
 	b2Body* groundBody;
