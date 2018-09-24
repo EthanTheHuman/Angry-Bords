@@ -6,8 +6,6 @@ b2Vec2 gravity(0.0f, -0.981f);
 // Construct a world object, which will hold and simulate the rigid bodies.
 b2World world(gravity);
 
-int i2DScalar = 20;
-
 MainMenu::MainMenu()
 {
 }
@@ -85,9 +83,7 @@ void MainMenu::Render()
 		BGElements[i]->render();
 	}
 
-	Puar.Sprite.SetTranslation(glm::vec3(Puar.Box.body->GetPosition().x * i2DScalar, Puar.Box.body->GetPosition().y * i2DScalar, 0));
 	Puar.Sprite.render();
-	Puar2.Sprite.SetTranslation(glm::vec3(Puar2.Box.body->GetPosition().x * i2DScalar, Puar2.Box.body->GetPosition().y * i2DScalar, 0));
 	Puar2.Sprite.render();
 }
 
@@ -99,6 +95,10 @@ void MainMenu::Update()
 	oldTimeSinceStart = TimeSinceStart;
 	// Instruct the world to perform a single step of simulation.
 	// It is generally best to keep the time step and iterations fixed.
+
+	Puar.Update();
+	Puar2.Update();
+
 	world.Step(timeStep, velocityIterations, positionIterations);
 }
 
@@ -135,5 +135,5 @@ void MainMenu::MoveCharacter(unsigned char KeyState[255]) {
 
 void MainMenu::MouseInput(int x, int y)
 {
-
+	
 }

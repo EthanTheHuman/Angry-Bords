@@ -44,8 +44,13 @@ struct GameObject
 	PhysicsBox Box;
 	Sprite Sprite;
 
-	render()
-	{
+	void ChangePos(glm::vec2 Pos , float Angle) {
+		Box.body->SetTransform({ Pos.x, Pos.y }, Angle);
+		Sprite.SetTranslation({ Pos.x * 20, Pos.y * 20, 0 });
+	}
+
+	void Update() {
+		Sprite.SetTranslation(glm::vec3(Box.body->GetPosition().x * 20, Box.body->GetPosition().y * 20, 0));
 	}
 };
 
@@ -94,4 +99,5 @@ private:
 	int selection = 0;
 	Menus menu = MAIN;
 	TextLabel * TempLabel;
+	int i2DScalar = 20;
 };
