@@ -28,11 +28,7 @@
 #include "dependencies\Box2D\Box2D.h"
 #include "dependencies\Box2D\Rope\b2Rope.h"
 #include "PhysicsBox.h"
-<<<<<<< HEAD
-#include "b2GLDraw.h"
-=======
 #include <vector>
->>>>>>> bfcf5f789ee2f7a4aa85825a31ec93588e6cbb65
 
 enum Menus {
 	MAIN,
@@ -72,9 +68,6 @@ public:
 	void Update();
 	void MoveCharacter(unsigned char KeyState[255]);
 	void MouseInput(int, int);
-<<<<<<< HEAD
-	void MouseClicks(unsigned char MouseState[3]);
-=======
 
 	b2BodyDef groundBodyDef;
 	b2Body* groundBody;
@@ -83,11 +76,11 @@ public:
 	GameObject Puar;
 	GameObject Puar2;
 	std::vector<GameObject> Obstacles;
+	std::vector<GameObject> Enemies;
 
 	float32 timeStep;
 	int32 velocityIterations;
 	int32 positionIterations;
->>>>>>> bfcf5f789ee2f7a4aa85825a31ec93588e6cbb65
 
 private:
 	// List of objects
@@ -110,21 +103,4 @@ private:
 	Menus menu = MAIN;
 	TextLabel * TempLabel;
 	int i2DScalar = 20;
-
-	//Box 2D
-	b2BodyDef groundBodyDef;
-	b2Body* groundBody;
-	b2PolygonShape groundBox;
-
-	GameObject Puar;
-	GameObject Puar2;
-	b2RopeDef RopeJoint;
-	b2MouseJoint * mouseJoint;
-
-	float32 timeStep;
-	int32 velocityIterations;
-	int32 positionIterations;
-
-	float worldX;
-	float worldY;
 };

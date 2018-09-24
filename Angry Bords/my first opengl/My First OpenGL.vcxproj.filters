@@ -132,9 +132,6 @@
     <ClCompile Include="PhysicsBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="b2GLDraw.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -222,9 +219,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PhysicsBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="b2GLDraw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

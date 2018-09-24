@@ -49,7 +49,6 @@ enum enumInputMouse
 	MOUSE_MIDDLE,
 	MOUSE_RIGHT,
 };
-
 unsigned char MouseState[3];
 GLfloat MouseSensitivity = 0.05f;
 GLfloat Yaw = 0.0f;
@@ -157,10 +156,9 @@ void Mouse(int button, int glutState, int x, int y)
 	{
 		MouseState[button] = (glutState == GLUT_DOWN) ? INPUT_HOLD : INPUT_RELEASED;
 	}
-	GameManager::GetInstance()->CurrentSceneClass()->MouseClicks(MouseState);
 }
 
 void MouseMovement(int x, int y)
 {
-	GameManager::GetInstance()->CurrentSceneClass()->MouseInput(x, y);
+	cout << x << " " << y << endl;
 }

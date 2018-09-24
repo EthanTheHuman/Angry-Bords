@@ -134,7 +134,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="b2GLDraw.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="client.cpp" />
     <ClCompile Include="consoletools.cpp" />
@@ -163,7 +162,6 @@
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="b2GLDraw.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="client.h" />
     <ClInclude Include="consoletools.h" />
