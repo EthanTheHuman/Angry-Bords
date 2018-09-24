@@ -53,6 +53,7 @@ public:
 	b2BodyDef groundBodyDef;
 	b2Body* groundBody;
 	b2PolygonShape groundBox;
+
 	b2BodyDef bodyDef;
 	b2Body* body;
 	b2PolygonShape dynamicBox;
@@ -60,6 +61,7 @@ public:
 	float32 timeStep;
 	int32 velocityIterations;
 	int32 positionIterations;
+
 	Sprite* Puar;
 	b2RopeDef RopeJoint;
 
