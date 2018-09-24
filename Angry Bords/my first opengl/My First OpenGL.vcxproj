@@ -147,6 +147,7 @@
     <ClCompile Include="networkmain.cpp" />
     <ClCompile Include="OtherPlayer.cpp" />
     <ClCompile Include="Physics.cpp" />
+    <ClCompile Include="PhysicsBox.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="server.cpp" />
@@ -175,6 +176,7 @@
     <ClInclude Include="networkentity.h" />
     <ClInclude Include="OtherPlayer.h" />
     <ClInclude Include="Physics.h" />
+    <ClInclude Include="PhysicsBox.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="server.h" />
