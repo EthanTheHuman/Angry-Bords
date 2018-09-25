@@ -44,7 +44,7 @@ void MainMenu::Init()
 	
 
 	// The extents are the half-widths of the box.
-	groundBox.SetAsBox(200.0f, 10.0f);
+	groundBox.SetAsBox(200.0f, 12.0f);
 
 	// Add the ground fixture to the ground body.
 	groundBody->CreateFixture(&groundBox, 0.0f);
@@ -52,10 +52,14 @@ void MainMenu::Init()
 	Puar.Sprite = Sprite("Textures/Krillin.png", MyCamera, SpriteShader);
 	Puar.Box = PhysicsBox(&world, -23.5f, -18.5f, 2.0f, 3.0f, 1.0f, 0.3f, 1.0f, 1.0f);
 
-	Puar2.Sprite = Sprite("Textures/Krillin.png", MyCamera, SpriteShader);
-	Puar2.Box = PhysicsBox(&world, -21.0f, 30.0f, 2.0f, 3.0f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Puar2.Sprite = Sprite("Textures/Piccolo.png", MyCamera, SpriteShader);
+	Puar2.Box = PhysicsBox(&world, -21.0f, 30.0f, 1.75f, 1.8f, 1.0f, 0.3f, 1.0f, 1.0f);
 
 	GameObject TempGameObject;
+	b2Body *ClingHercule;
+	b2Body *ClingBox;
+	b2Body *PrisBox;
+	b2Body *SlideBox;
 
 	//Square
 	TempGameObject.Sprite = Sprite("Textures/Roblock.png", MyCamera, SpriteShader);
@@ -64,6 +68,14 @@ void MainMenu::Init()
 	TempGameObject.Box = PhysicsBox(&world, 10.0f, -20.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
 	TempGameObject.Box = PhysicsBox(&world, 10.0f, -15.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 10.0f, 05.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, -10.0f, -25.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	PrisBox = Obstacles.back().Box.body;
+
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, -5.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
 
 	TempGameObject.Box = PhysicsBox(&world, 20.0f, -25.0f, 2.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
@@ -89,8 +101,17 @@ void MainMenu::Init()
 	TempGameObject.Box = PhysicsBox(&world, 27.5f, -10.0f, 4.99f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
 
+	TempGameObject.Box = PhysicsBox(&world, 0.0f, -20.0f, 4.99f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	SlideBox = Obstacles.back().Box.body;
+
 	//3-wide
 	TempGameObject.Sprite = Sprite("Textures/Widerblock.png", MyCamera, SpriteShader);
+	TempGameObject.Box = PhysicsBox(&world, 5.0f, -5.0f, 7.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	TempGameObject.Box = PhysicsBox(&world, 15.0f, 0.0f, 7.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Obstacles.push_back(TempGameObject);
+	ClingBox = Obstacles.back().Box.body;
 	TempGameObject.Box = PhysicsBox(&world, 20.0f, -15.0f, 7.49f, 2.49f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Obstacles.push_back(TempGameObject);
 
@@ -98,15 +119,29 @@ void MainMenu::Init()
 	//Enemies
 	TempGameObject.Sprite = Sprite("Textures/Hercule.png", MyCamera, SpriteShader);
 	TempGameObject.Sprite.SetScale(glm::vec3(-1, 1, 1));
+	//Hanging
+	TempGameObject.Box = PhysicsBox(&world, 0.0f, -15.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
+	Enemies.push_back(TempGameObject);
 	TempGameObject.Box = PhysicsBox(&world, 15.0f, -20.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Enemies.push_back(TempGameObject);
 	TempGameObject.Box = PhysicsBox(&world, 20.0f, 10.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Enemies.push_back(TempGameObject);
+	ClingHercule = Enemies.back().Box.body;
+	//Cling
 	TempGameObject.Box = PhysicsBox(&world, 25.0f, -20.0f, 2.5f, 3.1f, 1.0f, 0.3f, 1.0f, 1.0f);
 	Enemies.push_back(TempGameObject);
 
+	//Distance joints
+	b2DistanceJointDef dDef;
+	dDef.bodyA = ClingHercule;
+	dDef.bodyB = ClingBox;
+	world.CreateJoint(static_cast<b2JointDef*>(&dDef));
 
-
+	//PrismaticJoint
+	b2PrismaticJointDef pDef;
+	pDef.bodyA = PrisBox;
+	pDef.bodyB = SlideBox;
+	world.CreateJoint(static_cast<b2JointDef*>(&pDef));
 
 	// Prepare for simulation. Typically we use a time step of 1/60 of a
 	// second (60Hz) and 10 iterations. This provides a high quality simulation
