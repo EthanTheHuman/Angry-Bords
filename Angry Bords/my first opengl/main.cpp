@@ -129,8 +129,9 @@ void update()
 {
 	glutPostRedisplay();
 	//Updated Move Function
-	GameManager::GetInstance()->CurrentSceneClass()->MoveCharacter(KeyState);
 	KeyboardUpdate();
+	GameManager::GetInstance()->CurrentSceneClass()->MouseClicks(MouseState);
+	GameManager::GetInstance()->CurrentSceneClass()->MoveCharacter(KeyState);
 }
 
 //Updated Keyboard Functions v3
@@ -156,7 +157,6 @@ void Mouse(int button, int glutState, int x, int y)
 	{
 		MouseState[button] = (glutState == GLUT_DOWN) ? INPUT_HOLD : INPUT_RELEASED;
 	}
-	GameManager::GetInstance()->CurrentSceneClass()->MouseClicks(MouseState);
 }
 
 void MouseMovement(int x, int y)

@@ -34,11 +34,11 @@ void MainMenu::Init()
 	//-------------------------------------------------------------------------------------------------------------------------------
 	// Define the ground body.
 	groundBodyDef.position.Set(0.0f, -40.0f);
-
 	// Call the body factory which allocates memory for the ground body
 	// from a pool and creates the ground box shape (also from a pool).
 	// The body is also added to the world.
 	groundBody = world.CreateBody(&groundBodyDef);
+	groundBody->SetType(b2_staticBody);
 
 	// Define the ground box shape.
 	
@@ -165,10 +165,10 @@ void MainMenu::Update()
 	// Instruct the world to perform a single step of simulation.
 	// It is generally best to keep the time step and iterations fixed.
 
+	world.Step(timeStep, velocityIterations, positionIterations);
+
 	Puar.Update();
 	Puar2.Update();
-
-	world.Step(timeStep, velocityIterations, positionIterations);
 }
 
 MainMenu::~MainMenu()
@@ -202,37 +202,54 @@ void MainMenu::MoveCharacter(unsigned char KeyState[255]) {
 	}
 }
 
-void MainMenu::MouseInput(int x, int y)
+void MainMenu::MouseInput(float x, float y)
 {
 	worldX = (x - 400) / 10;
 	worldY = (y - 300) / 10;
-
-	cout << worldY << " ";
-
-	b2MouseJointDef md;
-	b2BodyDef temp;
-	md.bodyA = world.CreateBody(&temp);
-	md.bodyB = Puar.Box.body;
-
-	md.target.Set(worldX, worldY);
-
-	md.collideConnected = false;
-	md.maxForce = 5000;
-	md.frequencyHz = 5;
-	md.dampingRatio = 0.9;
-	cout << md.target.y << endl;
-
-	if (mouseJoint != nullptr) {
-		world.DestroyJoint(mouseJoint);
-		mouseJoint = NULL;
-	}
-	mouseJoint = static_cast<b2MouseJoint*>(world.CreateJoint(&md));
 }
 
 void MainMenu::MouseClicks(unsigned char MouseState[3])
 {
-	if (MouseState[0] == INPUT_RELEASED) {
-		world.DestroyJoint(mouseJoint);
-		mouseJoint = NULL;
+	if (MouseState[0] == INPUT_HOLD) {
+		MoveOnSling(-23.5f, 19.0f, &Puar);
+		cout << worldX << " " << worldY << endl;
+		impulse = true;
 	}
+	if (MouseState[0] == INPUT_RELEASED) {
+		if (impulse) {
+			ReleaseFromSling(&Puar);
+			impulse = false;
+		}
+	}
+}
+
+void MainMenu::MoveOnSling(float slingX, float slingY, GameObject * fling) {
+
+	const double x_diff = slingX - worldX;
+	const double y_diff = slingY - worldY;
+	float distance = std::sqrt(x_diff * x_diff + y_diff * y_diff);
+
+	glm::vec2 SlingPos;
+
+	if (distance < 10) {
+		SlingPos.x = worldX;
+		SlingPos.y = -worldY;
+
+		Slingforce.x = -x_diff;
+		Slingforce.y = y_diff;
+		fling->ChangePos(SlingPos, NULL);
+	}
+	else {
+		SlingPos.x = (-(x_diff / distance) * 10) + slingX;
+		SlingPos.y = ((y_diff / distance) * 10) - slingY;
+
+		Slingforce.x = -(x_diff / distance) * 10;
+		Slingforce.y = (y_diff / distance) * 10;
+
+		fling->ChangePos(SlingPos, NULL);
+	}
+}
+
+void MainMenu::ReleaseFromSling(GameObject * fling) {
+	fling->Box.body->ApplyLinearImpulse({ -Slingforce.x * 1000, -Slingforce.y * 1000 }, fling->Box.body->GetWorldCenter(), true);
 }

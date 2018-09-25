@@ -48,11 +48,13 @@ void Scene::MoveCharacter(unsigned char KeyState[255])
 	}
 }
 
-void Scene::MouseInput(int x, int y) {
+void Scene::MouseInput(float x, float y)
+{
 
 }
 
-void Scene::MouseClicks(unsigned char MouseState[3]) {
+void Scene::MouseClicks(unsigned char MouseState[3])
+{
 
 }
 

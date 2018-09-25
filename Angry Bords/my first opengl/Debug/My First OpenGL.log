@@ -1,0 +1,118 @@
+﻿  Camera.cpp
+  client.cpp
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\client.cpp(70): warning C4101: '_usServerPort': unreferenced local variable
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\client.cpp(75): warning C4101: '_uiServerIndex': unreferenced local variable
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\client.cpp(249): warning C4018: '<': signed/unsigned mismatch
+  consoletools.cpp
+  CubeMap.cpp
+  Entity.cpp
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\entity.cpp(11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\entity.cpp(12): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  GameManager.cpp
+  inputlinebuffer.cpp
+  main.cpp
+  MainMenu.cpp
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(136): warning C4018: '<': signed/unsigned mismatch
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(142): warning C4018: '<': signed/unsigned mismatch
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(149): warning C4018: '<': signed/unsigned mismatch
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(162): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(207): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(208): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\mainmenu.cpp(222): warning C4305: '=': truncation from 'double' to 'float32'
+  network.cpp
+  networkmain.cpp
+  OtherPlayer.cpp
+  Physics.cpp
+  PhysicsBox.cpp
+  Player.cpp
+  Scene.cpp
+  server.cpp
+  ShaderLoader.cpp
+  socket.cpp
+  Sound.cpp
+  Generating Code...
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\client.cpp(180): warning C4715: 'CClient::RetreveBroadcast': not all control paths return a value
+  Compiling...
+  Sphere.cpp
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sphere.cpp(22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sphere.cpp(23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sphere.cpp(24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Sprite.cpp
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sprite.cpp(236): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sprite.cpp(237): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sprite.cpp(243): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sprite.cpp(244): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sprite.cpp(250): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sprite.cpp(251): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sprite.cpp(257): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\sprite.cpp(258): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  TextLabel.cpp
+d:\users\brandon.van7367\documents\github\angry-bords\angry bords\my first opengl\textlabel.cpp(63): warning C4838: conversion from 'FT_Pos' to 'GLuint' requires a narrowing conversion
+  UFO.cpp
+  UISprite.cpp
+  Utils.cpp
+  Generating Code...
+Box2DRelease.lib(b2PolygonShape.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2PolygonShape.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2Body.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2Body.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2World.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2World.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2Fixture.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2Fixture.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2BroadPhase.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2BroadPhase.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2ContactManager.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2ContactManager.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2Island.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2Island.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2Joint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2Joint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2PulleyJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2PulleyJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2Contact.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2Contact.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2WorldCallbacks.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2WorldCallbacks.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2ContactSolver.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2ContactSolver.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2DistanceJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2DistanceJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2WheelJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2WheelJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2MouseJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2MouseJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2RevoluteJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2RevoluteJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2PrismaticJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2PrismaticJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2GearJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2GearJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2WeldJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2WeldJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2FrictionJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2FrictionJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2RopeJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2RopeJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2MotorJoint.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2MotorJoint.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2CircleContact.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2CircleContact.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2PolygonAndCircleContact.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2PolygonAndCircleContact.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2PolygonContact.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2PolygonContact.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2EdgeAndCircleContact.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2EdgeAndCircleContact.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2EdgeAndPolygonContact.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2EdgeAndPolygonContact.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2ChainAndCircleContact.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2ChainAndCircleContact.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2ChainAndPolygonContact.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2ChainAndPolygonContact.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2ChainShape.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2ChainShape.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+Box2DRelease.lib(b2EdgeShape.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in Camera.obj
+Box2DRelease.lib(b2EdgeShape.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in Camera.obj
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+D:\Users\brandon.van7367\Documents\GitHub\Angry-Bords\Angry Bords\Debug\My First OpenGL.exe : fatal error LNK1319: 62 mismatches detected

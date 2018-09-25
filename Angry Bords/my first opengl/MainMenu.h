@@ -46,7 +46,14 @@ struct GameObject
 	Sprite Sprite;
 
 	void ChangePos(glm::vec2 Pos , float Angle) {
-		Box.body->SetTransform({ Pos.x, Pos.y }, Angle);
+		float tempA;
+		if (Angle == NULL) {
+			tempA = Box.body->GetAngle();
+		}
+		else {
+			tempA = Angle;
+		}
+		Box.body->SetTransform({ Pos.x, Pos.y }, tempA);
 		Sprite.SetTranslation({ Pos.x * 20, Pos.y * 20, 0 });
 	}
 
@@ -67,8 +74,12 @@ public:
 	void Render();
 	void Update();
 	void MoveCharacter(unsigned char KeyState[255]);
-	void MouseInput(int, int);
+	void MouseInput(float, float);
 	void MouseClicks(unsigned char MouseState[3]);
+
+	void MoveOnSling(float slingX, float slingY, GameObject * fling);
+
+	void ReleaseFromSling(GameObject * fling);
 
 private:
 	// List of objects
@@ -95,6 +106,7 @@ private:
 	//Box 2D 
 	b2BodyDef groundBodyDef;
 	b2Body* groundBody;
+	b2Body* SlingBody;
 	b2PolygonShape groundBox;
 
 	GameObject Puar;
@@ -106,8 +118,8 @@ private:
 	int32 velocityIterations;
 	int32 positionIterations;
 
-	b2MouseJoint * mouseJoint;
-
 	float worldX;
 	float worldY;
+	bool impulse = true;
+	glm::vec2 Slingforce;
 };
